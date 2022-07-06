@@ -31,10 +31,12 @@ runs:
     - name: Clone Deta Metadata
       shell: bash
       run: |
+        echo "foo"
         export DETA_ACCESS_TOKEN=${{ inputs.deta-access-token }}
         cd ${{ inputs.deta-project-dir }}
-        ~/.deta/bin/deta clone --name ${{ inputs.deta-name }} --project ${{ inputs.deta-project }} tmp/
-        cp -r /tmp/.deta .
+        mkdir /tmp/deta/
+        ~/.deta/bin/deta clone --name ${{ inputs.deta-name }} --project ${{ inputs.deta-project }} /tmp/deta/
+        cp -r /tmp/deta/.deta .
 
     # Using the access token, deploy the project to Deta
     # https://docs.deta.sh/docs/cli/commands#deta-deploy
