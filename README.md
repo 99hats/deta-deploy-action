@@ -1,5 +1,5 @@
 # Deploy to Deta Micro
-
+V1.02
 <p align="center">
  <i>Lots of thanks to the <a href="https://github.com/Maxsior/BotCom">BotCom</a> folks for clarification and to the <b><a href="">Deta</a> folks</b> and for all the walkthroughs and hard work! 💕</i>
 </p>
